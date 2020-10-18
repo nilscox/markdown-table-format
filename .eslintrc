@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "simple-import-sort"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "rules": {
+    "no-console": "off",
+    "sort-imports": "off",
+    "simple-import-sort/sort": ["warn", {
+      "groups": [
+        ["^react$", "^react-dom$"],
+        ["^@?[a-z]"],
+        ["^src/"],
+        ["^../", "^./"]
+      ]
+    }],
+    "react/prop-types": "off"
+  }
+}

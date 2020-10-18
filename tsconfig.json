@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "src"
+  ]
+}
